@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/pages/Home.vue'
 import Sobre from '@/pages/Sobre.vue'
+import Videos from '@/pages/Videos.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/sobre',
     name: 'sobre',
     component: Sobre,
+  },
+  {
+    path: '/videos',
+    name: 'videos',
+    component: Videos,
   },
 ]
 
