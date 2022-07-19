@@ -38,6 +38,7 @@ export default {
 <style scoped>
 .videos-intro {
   padding: 20px;
+  margin-bottom: 50px;
 }
 .videos-container {
   display: flex;
