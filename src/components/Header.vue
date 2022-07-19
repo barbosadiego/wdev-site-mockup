@@ -1,12 +1,12 @@
 <template>
   <header>
     <nav class="nav">
-      <a href="/">
+      <router-link to="/">
         <img
           src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"
           alt="WDEV logo"
         />
-      </a>
+      </router-link>
       <ul class="menu" :class="{show: isActive}">
         <div class="close" @click="showMenu">
           <div class="line"></div>
@@ -18,16 +18,16 @@
           >
         </li>
         <li>
-          <a @click="showMenu" href="/">Home</a>
+          <router-link @click="showMenu" to="/">Home</router-link>
         </li>
         <li>
-          <a @click="showMenu" href="/sobre">Sobre</a>
+          <router-link @click="showMenu" to="/sobre">Sobre</router-link>
         </li>
         <li>
-          <a @click="showMenu" href="/videos">Vídeos</a>
+          <router-link @click="showMenu" to="/videos">Vídeos</router-link>
         </li>
         <li>
-          <a @click="showMenu" href="/contato">Contato</a>
+          <router-link @click="showMenu" to="/contato">Contato</router-link>
         </li>
       </ul>
       <div class="mobile" @click="showMenu">
@@ -125,6 +125,9 @@ header {
   .close, 
   .menu-logo{
     display: none;
+  }
+  .nav{
+    padding: 0px;
   }
   .menu{
     position: static;
