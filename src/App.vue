@@ -64,4 +64,15 @@ a {
 main{
   flex: 1;
 }
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title{
+  margin: 50px 0px 30px;
+  color: var(--color-text-title);
+  font-size: 2rem;
+}
 </style>
