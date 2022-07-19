@@ -1,51 +1,68 @@
 <template>
   <div id="app">
     <Header />
+    <main>
+      <router-view></router-view>
+    </main>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+
 export default {
   name: 'App',
-  components:{
+  components: {
     Header,
-  }
-}
+
+    Footer,
+  },
+};
 </script>
 
 <style>
 :root {
-  --color-background:#F3F3F3;
-  --color-background-nav:#2B3D50;
-  --color-background-home:#344960;
-  --color-text-light:#EDEDED;
-  --color-text-title:#FF5555;
-  --color-text-dark:#3D3D3D;
+  --color-background: #f3f3f3;
+  --color-background-nav: #2b3d50;
+  --color-background-home: #344960;
+  --color-text-light: #ededed;
+  --color-text-title: #ff5555;
+  --color-text-dark: #3d3d3d;
 }
 
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-background);
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+}
 </style>
