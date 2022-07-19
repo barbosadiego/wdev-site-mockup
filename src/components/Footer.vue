@@ -40,6 +40,8 @@ export default {
   height: 60px;
   display: flex;
   justify-content: center;
+  /* position: relative; */
+  /* top: 60px; */
 }
 .footer img{
   width: 20px;
